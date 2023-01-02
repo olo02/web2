@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>01002's WEB - html</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1 class="webName"><font color="lightgreen">02 WEB</font></h1>
+
+<div class="webPage">
+	<ul id="sideBar">
+
+		<input type="button" value="night" onclick="
+			var target = document.querySelector('body');
+			var target2 = document.querySelector('h1');
+			if(this.value === 'night')
+			{
+				target.style.backgroundColor = 'black';
+				target2.style.backgroundColor = 'black';
+				target.style.color ='white';
+				this.value = 'day';
+			} else {
+				target.style.backgroundColor = 'white';
+				target2.style.backgroundColor = 'pink'
+				target.style.color = 'black';
+				this.value = 'night';
+			}
+		">
+
+		<li><a href="helloworld.html"><h3>Hello World</h3></a></li>
+		<li><a href="01002.html"> <h3>응공이네</h3></a></li>
+		<li><a href="html.html"><h3>HTML</h3></a></li>
+		<li><a href="css0.html"><h3>CSS</h3></a></li>
+		<li><a href="javascript0.html"><h3>JavaScript</h3></a></li>
+		<li><a href="box.html"><h3><font color="pink">시</font></h3></a></li>
+	</ul>
+
+	<div id="webMain">
+
+		<h2>HTML이란 무엇인가?</h2>
+
+		<p>
+			<iframe width="600" height="300" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="WEB1 부록 - 코드의 힘 : 동영상 삽입" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+		<p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_black" title="html5 specification">Hypertext Markup Langueage (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web application.
+		Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+		<br>
+		<img src="a.jpg" width="60%">
+		<br>
+		<p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
+
+		<p>
+			<h3>coding</h3>
+			<span style="font-size:24px">coding</span>
+
+			<input type="checkbox">
+			<input type="checkbox">
+			<input type="checkbox">
+		</p>
+
+		<p>
+			<a href="home.html"><img src="webhome.png" width="5%" align="right"></a>
+		</p>
+	</div>
+</div>
+</body>
+</html>

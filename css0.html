@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>01002's WEB - html</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		a {
+			text-decoration: none;
+			color: plum;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="webName"><font color="lightgreen">02 WEB</font></h1>
+
+<div class="webPage">
+	<ul id="sideBar">
+
+		<input type="button" value="night" onclick="
+			var target = document.querySelector('body');
+			var target2 = document.querySelector('h1');
+			if(this.value === 'night')
+			{
+				target.style.backgroundColor = 'black';
+				target2.style.backgroundColor = 'black';
+				target.style.color ='white';
+				this.value = 'day';
+			} else {
+				target.style.backgroundColor = 'white';
+				target2.style.backgroundColor = 'pink'
+				target.style.color = 'black';
+				this.value = 'night';
+			}
+		">
+
+		<li><a href="helloworld.html"><h3>Hello World</h3></a></li>
+		<li><a href="01002.html"> <h3>응공이네</h3></a></li>
+		<li><a href="html.html"><h3>HTML</h3></a></li>
+		<li><a href="css0.html"><h3>CSS</h3></a></li>
+		<li><a href="javascript0.html"><h3>JavaScript</h3></a></li>
+		<li><a href="box.html"><h3><font color="pink">시</font></h3></a></li>
+	</ul>
+
+	<div id="webMain">
+
+		<img src="bb.jfif" width="70%">
+		<ol>
+			<li><a href="grid.html"><h3>그리드연습1</h3></a></li>
+			<li><a href="grid1.html"><h3>그리드연습2</h3></a></li>
+			<li><a href="baemin.html"><h3><font color="mediumpurple">배달의 민족 어플 왕뿌듯</font></h3></a></li>
+		</ol>
+
+		<p>
+			<a href="home.html"><img src="webhome.png" width="5%" align="right"></a>
+		</p>
+
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<title>01002's WEB - html</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		#위젯{
+			text-align: right;
+		}
+	</style>
+</head>
+
+<body>
+<h1 class="webName"><font color="lightgreen">02 WEB</font></h1>
+
+<div class="webPage">
+	<ul id="sideBar">
+
+		<input type="button" value="night" onclick="
+			var target = document.querySelector('body');
+			var target2 = document.querySelector('h1');
+			if(this.value === 'night')
+			{
+				target.style.backgroundColor = 'black';
+				target2.style.backgroundColor = 'black';
+				target.style.color ='white';
+				this.value = 'day';
+			} else {
+				target.style.backgroundColor = 'white';
+				target2.style.backgroundColor = 'pink'
+				target.style.color = 'black';
+				this.value = 'night';
+			}
+		">
+
+		<li><a href="helloworld.html"><h3>Hello World</h3></a></li>
+		<li><a href="01002.html"> <h3>응공이네</h3></a></li>
+		<li><a href="html.html"><h3>HTML</h3></a></li>
+		<li><a href="css0.html"><h3>CSS</h3></a></li>
+		<li><a href="javascript0.html"><h3>JavaScript</h3></a></li>
+		<li><a href="box.html"><h3><font color="pink">시</font></h3></a></li>
+	</ul>
+
+	<div id="webMain">
+	
+    <p>
+		<h4 id="위젯"><i><font color="steelblue">채팅하기 위젯 ▲</font></i></h4>
+	</p>
+
+<!--
+	<ul>
+		<li><a href="index.html"><h3><font color="red">Hello World</font></h3></a></li>
+		<li><a href="2.html"><h3>응공이네</h3></a></li>
+		<li><a href="3.html"><h3>HTML</h3></a></li>
+	</ul>
+-->
+
+	<br>
+	<p>
+		<center><img src="c.png" width="30%"></center>
+		<center><h4><font color="lightblue">방명록을~남겨주세요~</font></h4></center>
+	</p>
+	<h2><font color="pink">♥방명록♥</font></h2>
+	<p>
+		<div id="disqus_thread"></div>
+	<script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://01002s-web-html.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
+
+
+<p>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/63a42b97daff0e1306dddbb4/1gkskkipr';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</p>
+
+</div>
+</div>
+</body>
+</html>

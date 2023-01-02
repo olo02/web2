@@ -1,0 +1,48 @@
+		.webName {
+			font-size:50px;
+			border-bottom:2px solid pink;
+			text-align: center;
+			margin:0;
+			padding:40px;
+			background-color:pink;
+			text-shadow: -1px 0 brown, 0 1px brown, 1px 0 brown, 0 -1px brown;
+		}
+		body {
+			margin:0;
+			color:pink;
+		}
+		.webPage {
+			display:grid;
+			grid-template-columns: 240px 1fr;
+			border-bottom:30px solid pink;
+		}
+		#sideBar a {
+			color:lightgreen;
+			text-decoration: none;
+		}
+		#sideBar {
+			border-right:4px solid pink;
+			width: 180px;
+			margin:0;
+			padding:20px;
+			padding-left:40px;
+		}
+		#webMain{
+			padding-left:20px;
+			padding-top : 20px;
+		}
+		@media(max-width:700px){
+			.webPage{
+				display:block;
+			}
+			#sideBar{
+				border-right:none;
+				display:grid;
+				grid-template-columns:repeat(3,1fr);
+				width:auto;
+			}
+			.webName{
+				border:none;
+			}
+		}
+		
